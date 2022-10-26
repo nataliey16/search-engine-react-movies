@@ -3,7 +3,7 @@ import Movies from "./Movies";
 
 function App() {
   return (
-    <div className="App container-fluid">
+    <div className="App container">
       <div className="background-img"></div>
       <Movies />
       <footer>

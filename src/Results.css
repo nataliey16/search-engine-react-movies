@@ -11,20 +11,20 @@
 }
 
 .Results h2 {
-  margin-bottom: 0;
+  font-size: 20px;
   text-align: right;
+  margin-bottom: 0;
+  line-height: 3;
+}
+.Results .rating-title {
+  font-weight: bolder;
+  opacity: 0.3;
 }
 
 .Results p {
   font-size: 20px;
   text-align: left;
   margin-bottom: 20px;
-}
-
-.Results .rating-title {
-  font-size: 16px;
-  font-weight: bolder;
-  opacity: 0.3;
 }
 
 .Results ul {
@@ -58,7 +58,25 @@
   margin-top: 30px;
 }
 
+.Results a {
+  float: left;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
 .Results .cast {
   margin-top: 30px;
   text-align: left;
+}
+
+@media (max-width: 950px) {
+  .Results img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .Results h1,
+  h2 {
+    text-align: center;
+  }
 }

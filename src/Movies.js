@@ -47,25 +47,27 @@ export default function Movies() {
   if (loaded) {
     return (
       <div className="Movies">
-        <form onChange={handleMovieChange}>
-          <div className="row">
-            <div className="col-lg-10 col-lg-10">
-              <input
-                className="form-control search-bar"
-                type="search"
-                placeholder="Search for a movie"
-              ></input>
+        <section>
+          <form onChange={handleMovieChange}>
+            <div className="row">
+              <div className="col-sm-8 col-sm-8">
+                <input
+                  className="form-control search-bar"
+                  type="search"
+                  placeholder="Search for a movie"
+                ></input>
+              </div>
+              <div className="col-sm-4 col-sm-4">
+                <input
+                  className="btn btn-branding"
+                  type="submit"
+                  value="search"
+                  onClick={handleMovieSubmit}
+                ></input>
+              </div>
             </div>
-            <div className="col-lg-2 col-lg-2">
-              <input
-                className="btn btn-branding"
-                type="submit"
-                value="search"
-                onClick={handleMovieSubmit}
-              ></input>
-            </div>
-          </div>
-        </form>
+          </form>
+        </section>
         <Results
           title={results.title}
           year={results.year}
