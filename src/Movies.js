@@ -5,7 +5,7 @@ import Results from "./Results";
 import "./Movies.css";
 
 export default function Movies() {
-  let [movie, setMovie] = useState("Finding Nemo");
+  let [movie, setMovie] = useState("When Harry Met Sally...");
   let [loaded, setLoaded] = useState(false);
   let [results, setResults] = useState("");
 
@@ -47,28 +47,27 @@ export default function Movies() {
   if (loaded) {
     return (
       <div className="Movies">
-        <section>
-          <h1>What movie are you looking for?</h1>
-          <form onChange={handleMovieChange}>
-            <div className="row">
-              <div className="col-sm-8 col-sm-8">
-                <input
-                  className="form-control search-bar"
-                  type="search"
-                  placeholder="Search for a movie"
-                ></input>
-              </div>
-              <div className="col-sm-4 col-sm-4">
-                <input
-                  className="btn btn-branding"
-                  type="submit"
-                  value="search"
-                  onClick={handleMovieSubmit}
-                ></input>
-              </div>
+        <h1>What movie are you looking for?</h1>
+        <form onChange={handleMovieChange}>
+          <div className="row">
+            <div className="col-sm-10 col-sm-10">
+              <input
+                className="form-control search-bar"
+                type="search"
+                placeholder="Search for a movie"
+                autoFocus="on"
+              ></input>
             </div>
-          </form>
-        </section>
+            <div className="col-sm-2 col-sm-2">
+              <input
+                className="btn btn-branding"
+                type="submit"
+                value="search"
+                onClick={handleMovieSubmit}
+              ></input>
+            </div>
+          </div>
+        </form>
         <Results
           title={results.title}
           year={results.year}

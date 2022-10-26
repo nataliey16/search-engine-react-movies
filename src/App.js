@@ -9,7 +9,23 @@ function App() {
       <footer>
         This project was coded by Natalie Yeung.
         <br />
-        It is open-sourced on Github and hosted on Netlify
+        It is open-sourced on {"  "}
+        <a
+          href="https://github.com/nataliey16/search-engine-react-movies.git"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {"  "}
+          Github
+        </a>
+        {"  "} and hosted on
+        <a
+          href="https://github.com/nataliey16/search-engine-react-movies.git"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {"  "} Netlify
+        </a>
       </footer>
     </div>
   );

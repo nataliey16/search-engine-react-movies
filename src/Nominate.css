@@ -1,0 +1,23 @@
+.Nominate a {
+  background: #f5c519;
+  color: black;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.Nominate a:hover {
+  color: white;
+  background: #f5c519;
+}
+
+@media (max-width: 990px) {
+  .Nominate a {
+    display: flex;
+    justify-content: center;
+    float: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

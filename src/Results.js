@@ -1,5 +1,6 @@
 import React from "react";
 import "./Results.css";
+import Nominate from "./Nominate";
 // import Poster from "./Poster";
 
 export default function Results(props) {
@@ -17,8 +18,8 @@ export default function Results(props) {
         </div>
       </div>
       <p className="year-released">{props.year}</p>{" "}
-      <div className="row">
-        <div className=" col-lg-3 col-lg-3">
+      <div className="row mb-3">
+        <div className="col-lg-3 col-lg-3">
           <img
             className="img-fluid"
             src={props.poster}
@@ -37,23 +38,14 @@ export default function Results(props) {
             <li className="about">{props.rated}</li>
           </ul>
         </div>
-        <div className=" col-lg-3 col-lg-3">
+        <div className="col-lg-3 col-lg-3">
           <ul>
             <li className="header-about">Genre</li>
             <li className="about">{props.genre}</li>
           </ul>
         </div>
       </div>
-      <a
-        className="btn btn-primary"
-        href="https://www.merriam-webster.com/dictionary/nominate"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Nominate
-      </a>
-      <br />
-      <br />
+      <Nominate title={props.title} />
       <div className="plot">{props.plot}</div>
       <div className="cast">
         <span className="text-uppercase header-about">Director: </span>

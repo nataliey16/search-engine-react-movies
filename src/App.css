@@ -1,10 +1,11 @@
 .App {
   background: #0a0b0d;
   border-radius: 10px;
+  font-family: "Poppins", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px 10px;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .App .background-img {
@@ -24,7 +25,19 @@
 }
 
 .App footer {
-  text-align: center;
+  background: #313131;
+  border-radius: 5px;
   color: white;
-  padding: 10px 10px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.App a {
+  text-decoration: none;
+  color: #f5c519;
+}
+
+.App a:hover {
+  text-decoration: none;
+  color: white;
 }
