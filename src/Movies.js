@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Bars } from "react-loader-spinner";
 // import Results from "./Results";
-// import "./Movies.css";
+import "./Movies.css";
 
 export default function Movies() {
   let [movie, setMovie] = useState("Finding Nemo");
