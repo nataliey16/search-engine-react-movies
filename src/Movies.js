@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Bars } from "react-loader-spinner";
-// import Results from "./Results";
+import Results from "./Results";
 import "./Movies.css";
 
 export default function Movies() {
@@ -66,7 +66,7 @@ export default function Movies() {
             </div>
           </div>
         </form>
-        {/* <Results
+        <Results
           title={results.title}
           year={results.year}
           poster={results.poster}
@@ -77,7 +77,7 @@ export default function Movies() {
           rating={results.rating}
           rated={results.rated}
           director={results.director}
-        /> */}
+        />
       </div>
     );
   } else {

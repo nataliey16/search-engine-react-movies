@@ -58,8 +58,6 @@ export default function Results(props) {
         <span className="text-uppercase header-about">Cast: </span>
         {props.actors}
       </div>
-
-      <Poster />
     </div>
   );
 }
