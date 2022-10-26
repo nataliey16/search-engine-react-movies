@@ -5,15 +5,15 @@ import "./Results.css";
 export default function Results(props) {
   return (
     <div className="Results">
-      <div className="row">
-        <div className="col-md-6 col-md-6">
-          <h1 className="movie-title">{props.title}</h1>
+      <div className="row movie-title">
+        <div className="col-lg-6 col-lg-6">
+          <h1 className="movie">{props.title}</h1>
         </div>
-        <div className="col-md-6 col-md-6">
-          <h2 className="rating rating-title">
+        <div className="col-lg-6 col-lg-6">
+          <div className="rating">
             IMDb RATING
             <i className="fa-solid fa-star"></i> {props.rating}/10
-          </h2>
+          </div>
         </div>
       </div>
       <p className="year-released">{props.year}</p>{" "}

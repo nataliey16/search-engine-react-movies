@@ -1,6 +1,12 @@
 .Movies {
-  padding: 20px 20px;
-  margin: 20px 30px;
+  padding: 5px 10px;
+  margin: 20px 20px;
+}
+
+.Movies h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
 }
 
 .Movies .search-bar {
@@ -17,4 +23,9 @@
   color: gray;
   width: 100%;
   border: 1px solid gray;
+}
+
+.Movies .Loading {
+  display: flex;
+  justify-content: center;
 }

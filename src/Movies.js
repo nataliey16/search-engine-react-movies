@@ -48,6 +48,7 @@ export default function Movies() {
     return (
       <div className="Movies">
         <section>
+          <h1>What movie are you looking for?</h1>
           <form onChange={handleMovieChange}>
             <div className="row">
               <div className="col-sm-8 col-sm-8">
@@ -85,14 +86,14 @@ export default function Movies() {
   } else {
     handleMovieData();
     return (
-      <div className="Loading text-center">
+      <div className="mt-5 mb-5 d-flex justify-content-center">
         <Bars
-          height="50"
-          width="50"
+          height="80"
+          width="80"
           color="#4fa94d"
           ariaLabel="bars-loading"
           wrapperStyle={{}}
-          wrapperClass=""
+          wrapperClass="bars-loading-wrapper"
           visible={true}
         />
       </div>
