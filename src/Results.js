@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Results.css";
+import "./Results.css";
 // import Poster from "./Poster";
 
 export default function Results(props) {

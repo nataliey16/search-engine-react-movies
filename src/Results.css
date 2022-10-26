@@ -1,0 +1,64 @@
+.Results {
+  padding: 30px 10px;
+  margin: 10px 10px;
+  color: white;
+}
+
+.Results h1 {
+  text-align: left;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.Results h2 {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.Results p {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.Results .rating-title {
+  font-size: 16px;
+  font-weight: bolder;
+  opacity: 0.3;
+}
+
+.Results ul {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.Results .header-about {
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.Results .about {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Results img {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: left;
+  border: 0.25px solid white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.Results .plot {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.Results .cast {
+  margin-top: 30px;
+  text-align: left;
+}
