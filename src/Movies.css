@@ -1,14 +1,13 @@
 .Movies {
   padding: 5px 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 10px 10px;
+  color: white;
 }
 
 .Movies h1 {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: white;
 }
 

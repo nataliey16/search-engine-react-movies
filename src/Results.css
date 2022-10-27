@@ -1,6 +1,6 @@
 .Results {
-  padding: 30px 10px;
-  margin: 10px 10px;
+  padding-top: 10px;
+  margin: 5px 10px;
   color: white;
 }
 
@@ -14,7 +14,7 @@
   font-weight: bolder;
   font-size: 20px;
   text-align: right;
-  line-height: 3;
+  line-height: 5;
   opacity: 0.5;
 }
 
@@ -25,80 +25,26 @@
 
 .Results p {
   font-size: 18px;
-  text-align: left;
-}
+  margin-bottom: 0;
 
-.Results ul {
-  margin-top: 20px;
-  list-style: none;
-  padding: 0;
-}
-
-.Results .header-about {
-  text-align: center;
-  font-size: 15px;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-.Results .about {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-}
-
-.Results img {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: left;
-  border: 0.25px solid white;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, #0e1e2552 0px 2px 16px 0px;
-  max-width: 50em;
-}
-
-.Results .plot {
-  text-align: left;
-  margin-top: 18px;
-}
-
-.Results .cast {
-  margin-top: 30px;
+  position: relative;
+  top: -20px;
   text-align: left;
 }
 
 @media (max-width: 990px) {
-  .Results img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 100%;
-  }
-
-  .Results ul {
-    margin: 12px 0;
-  }
-
   .Results .movie {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 
   .Results .rating {
     text-align: center;
+    margin-bottom: 0;
   }
 
   .Results p {
     text-align: center;
-    margin: 20px 0;
-  }
-
-  .Results .plot {
-    text-align: center;
-    margin-bottom: 5px;
-  }
-
-  .Results .cast {
-    text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 }

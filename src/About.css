@@ -1,0 +1,26 @@
+.About {
+  margin: 5px 10px;
+  color: white;
+}
+
+.About .plot {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.About .cast {
+  margin-top: 30px;
+  text-align: left;
+}
+
+@media (max-width: 990px) {
+  .About .plot {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .About .cast {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}

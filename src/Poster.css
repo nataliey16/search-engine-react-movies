@@ -1,0 +1,44 @@
+.Poster {
+  margin: 0 10px;
+  color: white;
+}
+
+.Poster ul {
+  margin-top: 5px;
+  list-style: none;
+}
+
+.Poster img {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: left;
+  border: 0.25px solid white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, #0e1e2552 0px 2px 16px 0px;
+  max-width: 50em;
+}
+
+.Poster .header-about {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.Poster .about {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+@media (max-width: 990px) {
+  .Poster img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .Poster ul {
+    margin: 12px 0;
+  }
+}

@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Bars } from "react-loader-spinner";
 import Results from "./Results";
+import Poster from "./Poster";
+import About from "./About";
 import "./Movies.css";
+import Nominate from "./Nominate";
 
 export default function Movies() {
   let [movie, setMovie] = useState("When Harry Met Sally...");
@@ -70,14 +73,19 @@ export default function Movies() {
         </form>
         <Results
           title={results.title}
+          rating={results.rating}
           year={results.year}
+        />
+        <Poster
           poster={results.poster}
           runTime={results.runTime}
+          rated={results.rated}
           genre={results.genre}
+        />
+        <Nominate title={results.title} />
+        <About
           plot={results.plot}
           actors={results.actors}
-          rating={results.rating}
-          rated={results.rated}
           director={results.director}
         />
       </div>
