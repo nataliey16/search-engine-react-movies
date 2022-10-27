@@ -1,14 +1,14 @@
 .Movies {
+  color: white;
   padding: 5px 10px;
   margin: 10px 10px;
-  color: white;
 }
 
 .Movies h1 {
-  text-align: center;
+  color: white;
   margin-bottom: 20px;
   margin-top: 20px;
-  color: white;
+  text-align: center;
 }
 
 .Movies .search-bar {
@@ -27,8 +27,8 @@
   padding: 10px 10px;
   margin: 0;
   text-transform: uppercase;
-  width: 100%;
   transition: all 200ms ease-in-out;
+  width: 100%;
 }
 
 .Movies .btn-branding:hover {
