@@ -7,7 +7,8 @@ function App() {
       <div className="background-img"></div>
       <Movies />
       <footer>
-        This project was coded by Natalie Yeung.
+        This project was coded by {"  "}
+        <span className="my-name">Natalie Yeung</span>.
         <br />
         It is open-sourced on {"  "}
         <a
