@@ -13,8 +13,6 @@ export default function Movies() {
   let [results, setResults] = useState("");
 
   function handleMovieResponse(response) {
-    console.log(response.data);
-
     setResults({
       title: response.data.Title,
       year: response.data.Year,
