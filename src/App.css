@@ -44,3 +44,7 @@
 .App .my-name {
   color: #f5c519;
 }
+.App .favicon {
+  margin-top: 10px;
+  font-size: 10px;
+}
