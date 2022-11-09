@@ -8,7 +8,7 @@ import "./Movies.css";
 import Nominate from "./Nominate";
 
 export default function Movies() {
-  let [movie, setMovie] = useState("When Harry Met Sally...");
+  let [movie, setMovie] = useState("Forrest Gump");
   let [loaded, setLoaded] = useState(false);
   let [results, setResults] = useState("");
 
