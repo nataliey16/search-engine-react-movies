@@ -6,11 +6,7 @@ export default function Poster(props) {
     <div className="Poster">
       <div className="row">
         <div className="col-lg-3 col-lg-3">
-          <img
-            className="img-fluid"
-            src={props.poster}
-            alt="movie-poster"
-          ></img>
+          <img className="img-fluid" src={props.poster} alt="poster"></img>
         </div>
         <div className="col-lg-3 col-lg-3">
           <ul>

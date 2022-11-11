@@ -4,8 +4,8 @@ import { Bars } from "react-loader-spinner";
 import Results from "./Results";
 import Poster from "./Poster";
 import About from "./About";
-import "./Movies.css";
 import Nominate from "./Nominate";
+import "./Movies.css";
 
 export default function Movies() {
   let [movie, setMovie] = useState("Forrest Gump");
@@ -14,6 +14,8 @@ export default function Movies() {
 
   function handleMovieResponse(response) {
     setResults({
+      response: response.data.Response,
+      error: response.data.Error,
       title: response.data.Title,
       year: response.data.Year,
       runTime: response.data.Runtime,
@@ -32,7 +34,6 @@ export default function Movies() {
     // https://www.omdbapi.com/
     let apiKey = "dcf858c8";
     let apiUrl = ` http://www.omdbapi.com/?t=${movie}&apikey=${apiKey}&`;
-
     axios.get(apiUrl).then(handleMovieResponse);
   }
 
@@ -69,6 +70,7 @@ export default function Movies() {
             </div>
           </div>
         </form>
+        <h2 className="mt-3">{results.error}</h2>
         <Results
           title={results.title}
           rating={results.rating}
