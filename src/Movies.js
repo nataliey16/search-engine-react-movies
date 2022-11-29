@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Bars } from "react-loader-spinner";
+// import { Bars } from "react-loader-spinner";
 import Results from "./Results";
 import Poster from "./Poster";
 import About from "./About";
@@ -94,15 +94,16 @@ export default function Movies() {
     handleMovieData();
     return (
       <div className="mt-5 mb-5 d-flex justify-content-center">
-        <Bars
-          height="80"
-          width="80"
-          color="#4fa94d"
-          ariaLabel="bars-loading"
-          wrapperStyle={{}}
-          wrapperClass="bars-loading-wrapper"
-          visible={true}
-        />
+        <h1>Loading...</h1>
+        {/* //   <Bars
+      //     height="80"
+      //     width="80"
+      //     color="#4fa94d"
+      //     ariaLabel="bars-loading"
+      //     wrapperStyle={{}}
+      //     wrapperClass="bars-loading-wrapper"
+      //     visible={true}
+      //   /> */}
       </div>
     );
   }
