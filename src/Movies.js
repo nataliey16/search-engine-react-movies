@@ -33,7 +33,7 @@ export default function Movies() {
   function handleMovieData() {
     // https://www.omdbapi.com/
     let apiKey = "dcf858c8";
-    let apiUrl = ` http://www.omdbapi.com/?t=${movie}&apikey=${apiKey}&`;
+    let apiUrl = ` https://www.omdbapi.com/?t=${movie}&apikey=${apiKey}&`;
     axios.get(apiUrl).then(handleMovieResponse);
   }
 
